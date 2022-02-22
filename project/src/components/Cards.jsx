@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Cards.scss';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import axios from 'axios';

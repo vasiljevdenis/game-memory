@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './Results.scss';
 import { useSelector } from 'react-redux';
 
 function Results() {
@@ -10,8 +11,7 @@ function Results() {
     let startGame = useSelector(state => state.start);
     const [result, setResult] = useState("d-none");
     useEffect(() => {
-      if (startGame === true) setResult("d-none");
-      if (startGame === false) setResult("d-block result");
+      startGame ? setResult("d-none") : setResult("d-block result");
     }, [startGame])
   
   return (

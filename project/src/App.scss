@@ -6,118 +6,12 @@
 }
 
 body {
-    padding: 5px;
-    background-color: #9BAEC2;
-    color: #fff;
+    padding: 5px !important;
+    background-color: #9BAEC2 !important;
+    color: #fff !important;
 }
 
 #root {
     display: flex;
     justify-content: center;
-}
-
-nav {
-    p {
-        margin: 0 20px 0 auto;
-        padding: 0;
-    }
-}
-
-.btn-primary {
-    background-color: #3B5875;
-    border-color: #3B5875;
-}
-
-.btn-primary:hover,
-.btn-primary:disabled,
-.btn-primary:active,
-.btn-primary::after,
-.btn-primary::before {
-    background-color: #5E6A75 !important;
-    border-color: #5E6A75 !important;
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-.cards {
-    @include row-cols(6);
-    max-width: 660px;
-    justify-content: center;
-
-    .card {
-        display: flex;
-        width: 100px;
-        height: 100px;
-        border-radius: 2px;
-        background-color: #213242;
-        cursor: pointer;
-        background: none;
-        border: none;
-        outline: none;
-        margin: 5px;
-        padding: 1px;
-
-        .inside {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
-            transition: 0.6s cubic-bezier(0.38, 0.02, 0.09, 1.66) all;
-
-            .front,
-            .back {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 7px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                backface-visibility: hidden;
-            }
-
-            .front {
-                background: #fff;
-                transform: rotateY(170deg);
-            }
-
-            .back {
-                background: #213242;
-                font-size: 100px;
-                transition: 0.3s ease all;
-            }
-
-            .back:hover {
-                background: #303e4b;
-                transform: scale(1.01);
-            }
-
-            img {
-                margin: 2px;
-                width: 100%;
-            }
-        }
-    }
-
-    .moved .inside {
-        transform: rotateY(170deg);
-    }
-}
-
-.result {
-    background-color: #213242;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    height: 300px;
-    padding: 5px;
-    margin: 5px;
-    align-items: center;
-
-    h2 {
-        text-align: center;
-        margin: 0;
-    }
 }

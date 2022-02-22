@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+nav {
+    p {
+        margin: 0 20px 0 auto;
+        padding: 0;
+    }
+
+    .btn-primary {
+        background-color: #3B5875;
+        border-color: #3B5875;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:disabled,
+    .btn-primary:active,
+    .btn-primary::after,
+    .btn-primary::before {
+        background-color: #5E6A75 !important;
+        border-color: #5E6A75 !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}

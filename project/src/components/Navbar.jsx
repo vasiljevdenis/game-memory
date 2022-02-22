@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './Navbar.scss';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
@@ -14,14 +15,14 @@ function Navbar() {
     
     useEffect(() => {
         let stopWatch = null;
-        if (timer === true) {
+        if (timer) {
             dispatch({
                 type: "START_GAME",
                 payload: true
             });
             run();
             stopWatch = setInterval(run, 1000);
-        } else if (timer === false) {
+        } else if (!timer) {
             clearInterval(stopWatch);
             dispatch({
                 type: "START_GAME",
@@ -32,7 +33,7 @@ function Navbar() {
     }, [timer, startGame])
 
     useEffect(() => {
-        if (startGame === false) setTimer(false);
+        if (!startGame) setTimer(false);
     }, [startGame])
 
     const run = () => {

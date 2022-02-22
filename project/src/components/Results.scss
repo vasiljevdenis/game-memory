@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.result {
+    background-color: #213242;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        margin: 0;
+    }
+}
